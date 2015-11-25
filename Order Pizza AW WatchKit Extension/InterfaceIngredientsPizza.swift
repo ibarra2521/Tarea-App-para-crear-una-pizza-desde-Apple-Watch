@@ -14,7 +14,6 @@ protocol ingredientsPizzaDelegate {
     func setPizzaIngredients(ingredients:[String:String])
 }
 
-
 class InterfaceIngredientsPizza: WKInterfaceController {
     @IBOutlet var swtchHam: WKInterfaceSwitch!
     @IBOutlet var swtchPepperoni: WKInterfaceSwitch!

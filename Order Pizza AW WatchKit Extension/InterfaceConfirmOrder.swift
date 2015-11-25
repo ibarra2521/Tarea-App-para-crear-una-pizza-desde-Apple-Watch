@@ -34,10 +34,7 @@ class InterfaceConfirmOrder: WKInterfaceController {
         let myContext = context as! Pizza
         delegate = myContext.delegate as? orderPizzaDelegate
         orderPizza = myContext
-        showOrder()
-        
-        //For testing
-//        self.btnCancelOutlet.setHidden(true)
+        showOrder()        
     }
 
     override func willActivate() {
@@ -57,15 +54,12 @@ class InterfaceConfirmOrder: WKInterfaceController {
         lblCheese.setText(orderPizza?.kindCheese)
         var ingredients: String = ""
         for (_, value) in (orderPizza?.ingredients)! {
-            ingredients += "\(value)\n"
+            ingredients += " \(value) "
         }
-        let index1 = ingredients.substringToIndex(ingredients.endIndex.predecessor())
-        lblngredients.setText(index1)
-        print(ingredients)
+        lblngredients.setText(ingredients)
     }
     
     @IBAction func btnAccept() {
-        print("Send kitchen")
         self.btnNewPizza.setHidden(false)
         self.btnAcceptOutlet.setHidden(true)
         showAlertMessage("Your order has been sent to the kitchen")

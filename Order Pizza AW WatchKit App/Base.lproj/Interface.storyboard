@@ -128,7 +128,7 @@
                         <group width="1" alignment="left" layout="vertical" id="qsO-45-jjd">
                             <items>
                                 <label alignment="left" text="Ingredientes:" id="mAE-eN-rv8"/>
-                                <label alignment="left" id="9ct-K5-DjB"/>
+                                <label alignment="left" numberOfLines="0" id="9ct-K5-DjB"/>
                             </items>
                         </group>
                         <button width="1" alignment="left" hidden="YES" title="New Pizza" id="4Yy-bY-2vG">
